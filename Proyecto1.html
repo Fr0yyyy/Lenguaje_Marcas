@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento y Nutrición - GymPro</title>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>ProdiGym</h1>
+        <p>Rutinas de entrenamiento y planes nutricionales para alcanzar tus metas</p>
+    </header>
+
+    <form action="procesar.php" method="POST">
+        <fieldset>
+            <legend><h2>Información Personal</h2></legend><br>
+    <label for="profilepic">Foto de perfil</label>
+    <input type="file" id="profilepic" name="profilepic"><br><br>
+    <label for="Nombre">Nombre:</label><br>
+    <input type="text" id="Nombre" placeholder="Campo obligatorio" required><br>
+    <label for="Apellidos">Apellidos:</label><br>
+    <input type="text" id="Apellidos" name="Apellidos"><br>
+    <label for="password">Contraseña:</label><br>
+    <input type="password" id="password" name="password"><br>
+
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad"><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+
+    <label>Sexo:</label>
+    <input type="radio" id="hombre" name="genero" value="hombre">
+    <label for="hombre">Hombre</label>
+    <input type="radio" id="mujer" name="genero" value="mujer">
+    <label for="mujer">Mujer</label><br><br>
+
+    <p>¡Suscríbete para asesorías personalizadas!</p>
+    <label for="suscr">Suscribirme</label>
+    <input type="checkbox" id="suscr" name="suscr">
+    <input type="submit" value="Guardar Cambios">
+    <input type="reset" value="Borrar">
+    </fieldset>
+    </form><br>
+
+
+    <!-- Sección de planes de entrenamiento -->
+    <section id="entrenamiento"> <!--Ganancia de masa muscular-->
+        <h2>Planes de Entrenamiento</h2>
+
+            <h3>Ganancia de Masa Muscular</h3>
+            <p>Entrenamiento orientado a la ganancia de masa muscular, con ejercicios recomendados y progresiones.</p>
+            <h4>Ejercicios básicos para la ganancia de masa muscular:</h4>
+            <table border="1"> <!--Ejercicios-->
+                <tr>
+                    <th>Ejercicio</th>
+                    <th>Grupo muscular</th>
+                    <th>Series</th>
+                    <th>Repeticiones</th>
+                    <th>Descanso</th>
+                </tr>
+                <tr>
+                    <td>Press mancuernas inclinado </td>
+                    <td>Pecho, hombro</td>
+                    <td>De 2 a 4</td>
+                    <td>de 6 a 8</td>
+                    <td>Entre 3 y 4 minutos</td>
+                </tr>
+                <tr>
+                    <td>Press militar con mancuernas</td>
+                    <td>Hombro</td>
+                    <td>De 2 a 4</td>
+                    <td>de 6 a 10</td>
+                    <td>Entre 3 y 4 minutos</td>
+                </tr>
+                <tr>
+                    <td>Jalón al pecho</td>
+                    <td>Espalda</td>
+                    <td>De 2 a 4</td>
+                    <td>de 8 a 12</td>
+                    <td>Entre 2 y 3 minutos</td>
+                </tr>
+                <tr>
+                    <td>Prensa</td>
+                    <td>Pierna</td>
+                    <td>De 2 a 4</td>
+                    <td>de 3 a 8</td>
+                    <td>Entre 3 y 4 minutos</td>
+                </tr>
+                </table>
+                <h4>Consejos para la ganancia de músculo:</h4>
+                <ul>
+                    <li>Volumen semanal recomendado: entre 6 y 20 series por grupo muscular.</li><br>
+                    <li>Descansos de al menos 48h horas para volver a entrenar el mismo grupo muscular.</li><br>
+                    <li>Tener una buena dieta, con un ligero superávit calórico y de 1,2 a 2g de proteína por kg de peso.</li>
+                </ul> <br>
+
+            <h3>Ganancia de Fuerza</h3> <!--Ganancia de fuerza-->
+            <p>Entrenamiento para mejorar la fuerza general. Ideal para progresar en tus levantamientos principales.</p>
+            <h4>Levantamientos principales para la ganancia de fuerza:</h4>
+            <table border="1"> <!--Ejercicios-->
+            <tr>
+                <th>Ejercicio</th>
+                <th>Grupo muscular</th>
+                <th>Series</th>
+                <th>Repeticiones</th>
+                <th>Descanso</th>
+            </tr>
+            <tr>
+                <td>Press banca</td>
+                <td>Pecho, hombro</td>
+                <td>De 2 a 4</td>
+                <td>de 4 a 8</td>
+                <td>Entre 3 y 4 minutos</td>
+            </tr>
+            <tr>
+                <td>Press militar</td>
+                <td>Hombro</td>
+                <td>De 2 a 4</td>
+                <td>de 4 a 8</td>
+                <td>Entre 3 y 4 minutos</td>
+            </tr>
+            <tr>
+                <td>Peso muerto</td>
+                <td>Pierna, Espalda</td>
+                <td>De 2 a 4</td>
+                <td>de 2 a 6</td>
+                <td>4 minutos en adelante</td>
+            </tr>
+            <tr>
+                <td>Sentadilla libre</td>
+                <td>Pierna, Espalda</td>
+                <td>De 2 a 4</td>
+                <td>de 3 a 8</td>
+                <td>4 minutos en adelante</td>
+            </tr>
+            </table>
+            <h4>Consejos para la ganancia de fuerza:</h4>
+            <ul>
+                <li>Entrenar con un volumen semanal más bajo (de 2 a 4 días)</li><br>
+                <li>Es importante que el cuerpo (tanto músculos como sistema nervioso) estén recuperados para afrontar la siguiente sesión.</li><br>
+                <li>Prestar especial atención al calentamiento y a las series de aproximamiento, pues en un plan de fuerza las cargas utilizadas<br>serán mayores, y la tensión sobre los tendones será superior.</li>
+            </ul> <br>
+
+            <h3>Pérdida de grasa</h3>
+            <p>Entrenamiento orientado a la pérdida de grasa, manteniendo el mayor músculo posible.</p>
+            <h4>Ejercicios:</h4>
+            <p>En el caso de la pérdida de grasa, los <b>ejercicios son los mismos que los que<br>
+            se usan para ganar músculo</b>. El motivo, es que a la hora de perder grasa, lo más <b></b>importante es conservar el<br>
+        músculo</b>, y llevar a cabo un intenso entrenamiento de hipertrofia es crucial para cumplir con esta premisa.</p>
+            <table border="1"> <!--Ejercicios-->
+                <tr>
+                    <th>Ejercicio</th>
+                    <th>Grupo muscular</th>
+                    <th>Series</th>
+                    <th>Repeticiones</th>
+                    <th>Descanso</th>
+                </tr>
+                <tr>
+                    <td>Press mancuernas inclinado </td>
+                    <td>Pecho, hombro</td>
+                    <td>De 2 a 4</td>
+                    <td>de 6 a 8</td>
+                    <td>Entre 3 y 4 minutos</td>
+                </tr>
+                <tr>
+                    <td>Press militar con mancuernas</td>
+                    <td>Hombro</td>
+                    <td>De 2 a 4</td>
+                    <td>de 6 a 10</td>
+                    <td>Entre 3 y 4 minutos</td>
+                </tr>
+                <tr>
+                    <td>Jalón al pecho</td>
+                    <td>Espalda</td>
+                    <td>De 2 a 4</td>
+                    <td>de 8 a 12</td>
+                    <td>Entre 2 y 3 minutos</td>
+                </tr>
+                <tr>
+                    <td>Prensa</td>
+                    <td>Pierna</td>
+                    <td>De 2 a 4</td>
+                    <td>de 3 a 8</td>
+                    <td>Entre 3 y 4 minutos</td>
+                </tr>
+                </table>
+                <h4>Consejos para la pérdida de grasa:</h4>
+                <ul>
+                    <li>Volumen semanal recomendado: entre 6 y 20 series por grupo muscular.</li><br>
+                    <li>Añadir actividad física de baja intensidad, como por ejemplo, caminar unos 3000 pasos más al día.</li><br>
+                    <li>Tener una buena dieta, con un ligero déficit calórico y de 1,5 a 2,2g de proteína por kg de peso.</li>
+                </ul> <br>
+
+    </section>
+
+    <!-- Sección de planes de nutrición -->
+    <section id="nutricion">
+        <h2>Planes Nutricionales</h2>
+
+            <h3>Ganancia de Masa Muscular</h3>
+            <p>Plan de alimentación con un alto contenido en proteínas y carbohidratos para apoyar el crecimiento muscular.</p>
+
+            <h3>Ganancia de Fuerza</h3>
+            <p>Plan de nutrición equilibrado para mantener un alto rendimiento en tus entrenamientos de fuerza.</p>
+
+            <h3>Pérdida de Grasa</h3>
+            <p>Plan bajo en calorías para reducir el porcentaje de grasa corporal mientras mantienes tu masa muscular.</p>
+
+    </section>
+
+    <!-- Sección de consejos generales -->
+    <section id="consejos">
+        <h2>Consejos Generales</h2>
+        <p>Encuentra recomendaciones sobre descanso, hidratación y recuperación para optimizar tus resultados.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 GymPro - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
